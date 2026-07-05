@@ -1,160 +1,165 @@
 # The Grand Line Restoration Initiative
 
-> *Internal Archive — Engineering Restoration Division*  
-> *Recovered Repository Status: PARTIALLY RECONSTRUCTED*
+> **Navigation Network Restoration Division**  
+> **Recovered Engineering Archives**  
+> **Internal Distribution Only**
 
 ---
 
-## Earliest Recovered Project
-
-This archive represents one of the earliest recovered Navigation Network engineering projects. Its purpose is to introduce participants to the Navigation Network from the perspective of an initial reconstruction effort.
-
-## Before You Begin
-
-If you are reading this, then you have been assigned to the **Grand Line Restoration Initiative**.
-
-Several engineering archives believed to be permanently lost have recently been recovered from long-term storage. The recovered data is incomplete. Portions of the repositories have been reconstructed automatically from fragmented snapshots, while others have survived only through incremental backups accumulated over many years.
-
-As a result, consistency across the recovered project cannot be guaranteed.
-
-Documentation may describe behavior that no longer exists.
-
-Configuration may not reflect the current implementation.
-
-Historical decisions may appear contradictory without additional context.
-
-Some engineering artifacts may originate from different points in the project's lifetime.
-
-Treat everything as you would any long-lived production system inherited from another team.
+> *"The Grand Line has never been conquered by strength alone. Every voyage was made possible by those who chose to understand the sea rather than challenge it."*
 
 ---
 
-# The Navigation Network
+## A Message from the Restoration Division
 
-Long before modern sea routes were standardized, navigation across the Grand Line relied on an enormous distributed system simply referred to as **The Navigation Network**.
+If this repository has reached you, then you are among the newest engineers assigned to the **Grand Line Restoration Initiative**.
 
-Contrary to popular belief, the Network was never a single application.
+For years, the Navigation Network quietly served as the foundation of long-distance navigation across the Grand Line. It was never intended to be noticed. While sailors relied on their Log Poses and captains trusted the routes before them, countless engineering teams worked behind the scenes to ensure every voyage reached its destination.
 
-It was a collection of services, tools, libraries, operational procedures, maintenance scripts, engineering documentation, deployment systems, monitoring utilities, compatibility layers, and countless internal projects maintained by different engineering teams over many years.
+The Network was never a single application.
 
-Most of those engineers are no longer here.
+It was an ecosystem.
 
-Their software is.
+Services communicated across islands.
 
----
+Navigation data was continuously refined.
 
-# The Collapse
+Operational tools monitored changing sea conditions.
 
-No complete record survives describing why the Network stopped evolving.
+Internal libraries evolved alongside deployment infrastructure.
 
-Archived operational reports mention interrupted migrations.
+Documentation, migration plans, compatibility layers, monitoring systems, and calibration utilities were maintained by different engineering offices, each responsible for a small part of something much larger.
 
-Maintenance notes reference compatibility concerns that were never resolved.
+For decades, the system simply worked.
 
-Infrastructure documents describe systems that no longer exist.
-
-Several repositories appear to have disappeared entirely.
-
-Some recovered snapshots contain references to components that have yet to be found.
-
-Whether those systems were intentionally removed, archived elsewhere, or simply lost remains unknown.
+Until it didn't.
 
 ---
 
-# The Restoration Initiative
+## The Lost Years
 
-Rather than replacing the Network, the Restoration Division was established with a different objective:
+No surviving record explains exactly when the decline began.
 
-Understand it.
+Some operational reports reference interrupted migrations.
 
-Restore only what can be justified.
+Infrastructure inventories list services whose implementations no longer exist.
 
-Preserve historical behavior whenever possible.
+Engineering journals describe redesigns that were never completed.
 
-Avoid unnecessary changes.
+Release documentation mentions deployments that cannot be reconstructed from the surviving repositories.
 
-The engineers who originally designed these systems made countless decisions based on operational realities that may no longer be obvious today.
+Entire engineering offices appear to vanish from the historical record without explanation.
 
-Assume every component exists for a reason until proven otherwise.
+Whether these events were planned, accidental, or simply the result of time has become impossible to determine.
 
----
-
-# Working With Archived Repositories
-
-The repositories recovered by the Initiative were not prepared for redistribution.
-
-They were internal engineering projects.
-
-Some may contain unfinished work.
-
-Some may include abandoned implementations.
-
-Some may preserve compatibility with software that no longer exists.
-
-Others may simply reflect years of accumulated technical debt.
-
-Large engineering systems rarely remain perfectly organized.
-
-These archives should be approached with that expectation.
+What remains today is only a fraction of what once existed.
 
 ---
 
-# Engineering Principles
+## Recovery Operations
 
-When working with archived software:
+Over the past several years, archival teams have recovered fragments of the original engineering repositories from damaged storage systems, outdated backup media, and long-forgotten infrastructure snapshots.
 
-Understand existing behavior before modifying it.
+Some archives are remarkably complete.
 
-Prefer evidence over assumptions.
+Others contain only partial histories.
 
-Documentation can become outdated.
+Several repositories were reconstructed from independent backups created months or even years apart.
 
-Implementations evolve.
+As a result, complete consistency should not be expected.
 
-Configuration changes over time.
+Documentation may describe systems that no longer exist.
 
-Historical decisions often outlive the circumstances that created them.
+Configuration files may reference historical implementations.
 
-Not every warning indicates a defect.
+Comments often outlive the code they were written for.
 
-Not every inconsistency is accidental.
+Entire directories occasionally preserve the work of engineers whose surrounding changes have been lost.
 
----
-
-# Notes About the Archive
-
-The recovered snapshot was assembled from multiple surviving sources.
-
-Although considerable effort has been made to preserve integrity, complete reconstruction was not always possible.
-
-Some files may reflect different revisions than neighboring files.
-
-File timestamps should not necessarily be interpreted as authoritative.
-
-Certain generated artifacts have intentionally been omitted from the archive because they can be reproduced from source.
-
-The repository should be considered an engineering snapshot rather than a definitive release.
+These are not unusual characteristics for software that has evolved over many years.
 
 ---
 
-# Expectations
+## The Engineering Offices
 
-You are not expected to possess prior knowledge of the original system.
+The recovered repositories originate from different engineering offices that maintained the Navigation Network throughout its lifetime.
 
-Approach the repository as you would any unfamiliar production codebase.
+Each office followed its own conventions, priorities, and development practices.
+
+Some specialized in stability.
+
+Some focused on large-scale migrations.
+
+Others were responsible for deployment infrastructure or long-term maintenance.
+
+Although every repository belongs to the same Navigation Network, none should be considered the complete picture.
+
+Understanding the Network requires understanding the people who maintained it.
+
+---
+
+## Working With Historical Systems
+
+Software of this scale is rarely simple.
+
+Interfaces evolve.
+
+Configuration changes.
+
+Temporary workarounds become permanent.
+
+Compatibility layers survive long after the systems they were written for.
+
+Documentation reflects the understanding of the engineers who wrote it, not necessarily the software as it exists today.
+
+Approach every archive with curiosity rather than certainty.
+
+Read before changing.
+
+Observe before replacing.
+
+Understand before simplifying.
+
+History often explains what source code alone cannot.
+
+---
+
+## Preservation
+
+The objective of the Restoration Initiative has never been to rewrite the Navigation Network.
+
+It is to preserve it.
+
+Every engineering decision should be treated with respect until its original purpose is understood.
+
+Many of the people who built these systems are no longer available to explain their work.
+
+Their design discussions now survive only through code, documentation, operational records, and the countless small decisions scattered throughout the repositories they left behind.
+
+Those repositories are now your responsibility.
+
+---
+
+## Final Note
+
+No archive tells the complete story.
+
+Every recovered repository captures only a moment in the life of the Navigation Network.
 
 Read carefully.
 
-Observe before changing.
+Question assumptions.
 
-Verify assumptions.
+Trust evidence.
 
-Allow the software to explain itself.
+And remember—
 
-Most importantly...
+every line of code was written by an engineer solving a problem that once seemed important.
 
-Resist the temptation to assume the newest implementation is always the correct one.
+Some of those problems have already been solved.
+
+Others are still waiting to be understood.
 
 ---
 
-> *"Every system tells the story of the engineers who built it. The code is only one chapter."*
+> *"A map shows you where to go. An engineer understands why the route exists."*
