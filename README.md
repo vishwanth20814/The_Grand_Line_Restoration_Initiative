@@ -325,23 +325,22 @@ Therefore, the historical implementation was preserved while restoring the expec
 
 ---
 
-# Screenshots
+## Screenshots
 
-## Reverse Mountain Test Failure
+### Repository Structure
+![Repository Structure](Screenshots/repository_structure.png)
 
-![Reverse Mountain Failure](screenshots/reverse-mountain-failure.png)
+### Reverse Mountain Tests
+![Reverse Mountain Tests](Screenshots/reverse_mountain_tests.png)
 
----
+### Git Status
+![Git Status](Screenshots/git_status.png)
 
-## Reverse Mountain Test Success
+### Git Log
+![Git Log](Screenshots/git_log.png)
 
-![Reverse Mountain Success](screenshots/reverse-mountain-success.png)
-
----
-
-## Final Successful Test Execution
-
-![All Tests Passed](screenshots/all-tests-passed.png)
+### GitHub Repository
+![GitHub Repository](Screenshots/github_repo.png)
 
 ---
 
