@@ -1,165 +1,350 @@
-# The Grand Line Restoration Initiative
+# Task 03 – The Grand Line Restoration Initiative
 
-> **Navigation Network Restoration Division**  
-> **Recovered Engineering Archives**  
-> **Internal Distribution Only**
+## Overview
 
----
-
-> *"The Grand Line has never been conquered by strength alone. Every voyage was made possible by those who chose to understand the sea rather than challenge it."*
+This task involved restoring and validating a recovered Rust codebase representing the **Grand Line Navigation Network**. The repository contained multiple engineering archives recovered from different stages of development. The objective was not to redesign the project, but to investigate its behavior, identify engineering issues, restore the intended functionality, and preserve the historical implementation.
 
 ---
 
-## A Message from the Restoration Division
+# Repository Structure
 
-If this repository has reached you, then you are among the newest engineers assigned to the **Grand Line Restoration Initiative**.
-
-For years, the Navigation Network quietly served as the foundation of long-distance navigation across the Grand Line. It was never intended to be noticed. While sailors relied on their Log Poses and captains trusted the routes before them, countless engineering teams worked behind the scenes to ensure every voyage reached its destination.
-
-The Network was never a single application.
-
-It was an ecosystem.
-
-Services communicated across islands.
-
-Navigation data was continuously refined.
-
-Operational tools monitored changing sea conditions.
-
-Internal libraries evolved alongside deployment infrastructure.
-
-Documentation, migration plans, compatibility layers, monitoring systems, and calibration utilities were maintained by different engineering offices, each responsible for a small part of something much larger.
-
-For decades, the system simply worked.
-
-Until it didn't.
+```
+ghost-in-the-machine/
+├── archives/
+│   ├── alabasta/
+│   ├── east-blue/
+│   ├── reverse-mountain/
+│   └── whiskey-peak/
+├── docs/
+├── src/
+├── tools/
+└── Cargo.toml
+```
 
 ---
 
-## The Lost Years
+# Objective
 
-No surviving record explains exactly when the decline began.
+The primary objectives of this task were to:
 
-Some operational reports reference interrupted migrations.
-
-Infrastructure inventories list services whose implementations no longer exist.
-
-Engineering journals describe redesigns that were never completed.
-
-Release documentation mentions deployments that cannot be reconstructed from the surviving repositories.
-
-Entire engineering offices appear to vanish from the historical record without explanation.
-
-Whether these events were planned, accidental, or simply the result of time has become impossible to determine.
-
-What remains today is only a fraction of what once existed.
+- Restore recovered engineering archives.
+- Build and test each Rust project.
+- Investigate compiler, runtime, and integration issues.
+- Preserve historical behavior rather than rewriting the implementation.
+- Document the engineering investigation and restoration process.
 
 ---
 
-## Recovery Operations
+# Investigation Process
 
-Over the past several years, archival teams have recovered fragments of the original engineering repositories from damaged storage systems, outdated backup media, and long-forgotten infrastructure snapshots.
+I investigated each recovered archive independently by reading its documentation and verifying its behavior.
 
-Some archives are remarkably complete.
+For every archive I performed:
 
-Others contain only partial histories.
+```bash
+cargo build
+cargo run
+cargo test
+```
 
-Several repositories were reconstructed from independent backups created months or even years apart.
-
-As a result, complete consistency should not be expected.
-
-Documentation may describe systems that no longer exist.
-
-Configuration files may reference historical implementations.
-
-Comments often outlive the code they were written for.
-
-Entire directories occasionally preserve the work of engineers whose surrounding changes have been lost.
-
-These are not unusual characteristics for software that has evolved over many years.
+This allowed me to verify compilation, runtime behavior, and integration tests before making any modifications.
 
 ---
 
-## The Engineering Offices
+# Archive Investigation
+itly referenced the directory. - The runtime resolved the directory correctly. - The integration test required its existence. - Restoring the directory allowed all tests to pass without modifying application logic.  Therefore, the historical implementation was preserved while restoring the expected project structure.  ---  # Final Result  | Archive | Build | Run | Tests | |----------|------|-----|-------| | Alabasta | ✅ | ✅ | ✅ | | East Blue | ✅ | ✅ | ✅ | | Reverse Mountain | ✅ | ✅ | ✅ (after restoration) | | Whiskey Peak | ✅ | ✅ | ✅ |  ---  # Screenshots  ## Reverse Mountain Test Failure  ![Reverse Mountain Failure](screenshots/reverse-mountain-failure.png)  ---  ## Reverse Mountain Test Success  ![Reverse Mountain Success](screenshots/reverse-mountain-success.png)  ---  ## Final Successful Test Execution  ![All Tests Passed](screenshots/all-tests-passed.png)  ---  # Conclusion  This task emphasized investigating an inherited Rust codebase, understanding existing engineering decisions, and restoring expected behavior with minimal changes. Instead of modifying application logic unnecessarily, the solu
+## 1. Alabasta
 
-The recovered repositories originate from different engineering offices that maintained the Navigation Network throughout its lifetime.
+### Investigation
 
-Each office followed its own conventions, priorities, and development practices.
+- Read the project documentation.
+- Built the project.
+- Executed the application.
+- Ran all tests.
 
-Some specialized in stability.
-
-Some focused on large-scale migrations.
-
-Others were responsible for deployment infrastructure or long-term maintenance.
-
-Although every repository belongs to the same Navigation Network, none should be considered the complete picture.
-
-Understanding the Network requires understanding the people who maintained it.
-
----
-
-## Working With Historical Systems
-
-Software of this scale is rarely simple.
-
-Interfaces evolve.
-
-Configuration changes.
-
-Temporary workarounds become permanent.
-
-Compatibility layers survive long after the systems they were written for.
-
-Documentation reflects the understanding of the engineers who wrote it, not necessarily the software as it exists today.
-
-Approach every archive with curiosity rather than certainty.
-
-Read before changing.
-
-Observe before replacing.
-
-Understand before simplifying.
-
-History often explains what source code alone cannot.
+### Results
+itly referenced the directory. - The runtime resolved the directory correctly. - The integration test required its existence. - Restoring the directory allowed all tests to pass without modifying application logic.  Therefore, the historical implementation was preserved while restoring the expected project structure.  ---  # Final Result  | Archive | Build | Run | Tests | |----------|------|-----|-------| | Alabasta | ✅ | ✅ | ✅ | | East Blue | ✅ | ✅ | ✅ | | Reverse Mountain | ✅ | ✅ | ✅ (after restoration) | | Whiskey Peak | ✅ | ✅ | ✅ |  ---  # Screenshots  ## Reverse Mountain Test Failure  ![Reverse Mountain Failure](screenshots/reverse-mountain-failure.png)  ---  ## Reverse Mountain Test Success  ![Reverse Mountain Success](screenshots/reverse-mountain-success.png)  ---  ## Final Successful Test Execution  ![All Tests Passed](screenshots/all-tests-passed.png)  ---  # Conclusion  This task emphasized investigating an inherited Rust codebase, understanding existing engineering decisions, and restoring expected behavior with minimal changes. Instead of modifying application logic unnecessarily, the solu
+- Build successful.
+- Runtime successful.
+- All integration tests passed.
+- Only compiler warnings (`dead_code` and `unused_import`) were present.
+- No functional issues required restoration.
 
 ---
 
-## Preservation
+## 2. East Blue
 
-The objective of the Restoration Initiative has never been to rewrite the Navigation Network.
+### Investigation
 
-It is to preserve it.
+- Built the project.
+- Executed the application.
+- Ran all tests.
 
-Every engineering decision should be treated with respect until its original purpose is understood.
+### Results
 
-Many of the people who built these systems are no longer available to explain their work.
-
-Their design discussions now survive only through code, documentation, operational records, and the countless small decisions scattered throughout the repositories they left behind.
-
-Those repositories are now your responsibility.
-
----
-
-## Final Note
-
-No archive tells the complete story.
-
-Every recovered repository captures only a moment in the life of the Navigation Network.
-
-Read carefully.
-
-Question assumptions.
-
-Trust evidence.
-
-And remember—
-
-every line of code was written by an engineer solving a problem that once seemed important.
-
-Some of those problems have already been solved.
-
-Others are still waiting to be understood.
+- Build successful.
+- Runtime successful.
+- All tests passed.
+- No engineering issues were detected.
 
 ---
 
-> *"A map shows you where to go. An engineer understands why the route exists."*
+## 3. Reverse Mountain
+
+### Investigation
+
+The build and runtime completed successfully, but one integration test failed.
+
+Failed test:
+
+```
+asset_directory_is_expected_in_config_tree
+```
+
+Error:
+
+```
+expected configured asset directory to exist
+```
+
+To determine the cause, I inspected:
+
+- `tests/integration.rs`
+- `config/application.toml`
+- `src/runtime.rs`
+
+The configuration contained:
+
+```toml
+assets_dir = "assets"
+```
+
+The runtime resolved the asset directory as:
+
+```rust
+let assets_dir = config_dir.join(&config.runtime.assets_dir);
+```
+
+This indicated that the application expected the following directory:
+
+```
+config/assets
+```
+
+However, the directory did not exist in the recovered archive.
+
+---
+
+## Root Cause
+
+The configuration referenced an asset directory that was missing from the repository structure.
+
+Although the runtime could continue with fallback behavior, the integration test explicitly required the configured asset directory to exist.
+
+---
+
+## Fix Applied
+
+Created the missing directory:
+
+```bash
+mkdir -p config/assets
+touch config/assets/.gitkeep
+```
+
+---
+
+## Verification
+
+After restoring the directory:
+
+```bash
+cargo test
+```
+
+Result:
+
+```
+running 3 tests
+
+test runtime_initializes_with_missing_asset_dir ... ok
+test load_default_config ... ok
+test asset_directory_is_expected_in_config_tree ... ok
+```
+
+All tests passed successfully.
+
+---
+
+## 4. Whiskey Peak
+
+### Investigation
+
+- Built the project.
+- Executed the application.
+- Ran all tests.
+
+### Results
+
+- Build successful.
+- Runtime successful.
+- All unit and integration tests passed.
+- No modifications were required.
+
+---
+
+# Engineering Issue Identified
+
+Only one engineering issue was discovered during the investigation.
+
+| Archive | Issue | Status |
+|----------|------|--------|
+| Alabasta | None | Passed |
+| East Blue | None | Passed |
+| Reverse Mountain | Missing configured asset directory | Fixed |
+| Whiskey Peak | None | Passed |
+
+---
+
+# Commands Used
+
+Repository setup:
+
+```bash
+git clone https://github.com/Rufine777/ghost-in-the-machine.git
+```
+
+Rust installation:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+```
+
+Project verification:
+
+```bash
+cargo build
+cargo run
+cargo test
+```
+
+Repository investigation:
+
+```bash
+cat README.md
+cat config/application.toml
+cat src/runtime.rs
+```
+
+Restoration:
+
+```bash
+mkdir -p config/assets
+touch config/assets/.gitkeep
+```
+
+Git:
+
+```bash
+git status
+git add .
+git commit
+git push
+```
+
+---
+
+# Rust Concepts Used
+
+- Cargo package management
+- Project structure
+- Configuration loading
+- Integration testing
+- Runtime initialization
+- Modules
+- Structs
+- Error handling
+- Path resolution
+
+---
+
+# Git Concepts Used
+
+- Repository cloning
+- Remote management
+- Repository status
+- Staging changes
+- Commits
+- Remote repositories
+- Push operations
+
+---
+
+# Linux Concepts Used
+
+- Directory navigation
+- File inspection
+- Directory creation
+- Hidden files
+- Terminal-based debugging
+
+Commands used include:
+
+- `cd`
+- `cat`
+- `mkdir`
+- `touch`
+- `find`
+- `git`
+- `cargo`
+
+---
+
+# Assumptions
+
+The missing asset directory was considered an accidental omission from the recovered engineering archive rather than an intended code change because:
+
+- The configuration explicitly referenced the directory.
+- The runtime resolved the directory correctly.
+- The integration test required its existence.
+- Restoring the directory allowed all tests to pass without modifying application logic.
+
+Therefore, the historical implementation was preserved while restoring the expected project structure.
+
+---
+
+# Final Result
+
+| Archive | Build | Run | Tests |
+|----------|------|-----|-------|
+| Alabasta | ✅ | ✅ | ✅ |
+| East Blue | ✅ | ✅ | ✅ |
+| Reverse Mountain | ✅ | ✅ | ✅ (after restoration) |
+| Whiskey Peak | ✅ | ✅ | ✅ |
+
+---
+
+# Screenshots
+
+## Reverse Mountain Test Failure
+
+![Reverse Mountain Failure](screenshots/reverse-mountain-failure.png)
+
+---
+
+## Reverse Mountain Test Success
+
+![Reverse Mountain Success](screenshots/reverse-mountain-success.png)
+
+---
+
+## Final Successful Test Execution
+
+![All Tests Passed](screenshots/all-tests-passed.png)
+
+---
+
+# Conclusion
+
+This task emphasized investigating an inherited Rust codebase, understanding existing engineering decisions, and restoring expected behavior with minimal changes. Instead of modifying application logic unnecessarily, the solution preserved the intended design by restoring the missing project structure, resulting in successful builds, execution, and test completion across all recovered engineering archives.
